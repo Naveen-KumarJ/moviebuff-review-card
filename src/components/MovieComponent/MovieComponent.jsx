@@ -1,7 +1,7 @@
 import React from 'react'
 import MovieDetails from './MovieDetails'
 import MovieCard from './MovieCard'
-import styles from './Moviecomponent.module.css'
+import styles from './MovieComponent.module.css'
 
 function MovieComponent() {
     return (
