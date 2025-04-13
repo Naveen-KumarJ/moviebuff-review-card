@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.cardWrapper{   
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: fit-content;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #B8B7D4;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cardContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainContext{
+    display: flex;
+    gap: 20px;
+}
+.poster{
+    width:80px;
+    height: 100px;
+}
+.poster img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movieDetails>p:nth-child(1){
+    font-size: 24px;
+}
+.movieDetails>p:nth-child(2){
+    font-size: 12px;
+    color: #8CBAD7;
+    margin-top: -3px;
+}
+.movieDetails>p:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    font-size: 12px;
+    margin-top: 6px;
+}
+.movieDetails>p:nth-child(3)>span:first-child{
+    border: 1px solid gray;
+    padding: 1px 5px;
+    border-radius: 4px;
+}
+.description{
+    font-size: 12px;
+    color: #B8B7D4;
+}
+.iconsContainer{
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    color: #6D6D6D;
+    margin-top: 20px;
+}
+
+
+/* media queries */
+@media screen and (min-width:1024px) {
+    .cardWrapper{
+        width: 60%;
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:468px) {
+    .cardContainer{
+        width: 60%;
+    }
+    .movieDetails>p:nth-child(3){
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+}

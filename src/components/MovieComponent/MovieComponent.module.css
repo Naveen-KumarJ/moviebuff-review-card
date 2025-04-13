@@ -1,0 +1,17 @@
+.movieContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Media Queries */
+@media screen and (min-width:1024) {
+    .movieContainer{
+        padding: 80px 20px;
+    }
+}
